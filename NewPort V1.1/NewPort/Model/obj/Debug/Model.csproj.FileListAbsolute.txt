@@ -1,0 +1,17 @@
+C:\Users\Azureman\Desktop\V1.0\V1.0\NewPort\Model\bin\Debug\Maticsoft.Model.dll
+C:\Users\Azureman\Desktop\V1.0\V1.0\NewPort\Model\bin\Debug\Maticsoft.Model.pdb
+C:\Users\Azureman\Desktop\V1.0\V1.0\NewPort\Model\obj\Debug\Maticsoft.Model.dll
+C:\Users\Azureman\Desktop\V1.0\V1.0\NewPort\Model\obj\Debug\Maticsoft.Model.pdb
+C:\Users\Azureman\Desktop\NewPort\Model\bin\Debug\Maticsoft.Model.dll
+C:\Users\Azureman\Desktop\NewPort\Model\bin\Debug\Maticsoft.Model.pdb
+C:\Users\Azureman\Desktop\NewPort\Model\obj\Debug\Maticsoft.Model.dll
+C:\Users\Azureman\Desktop\NewPort\Model\obj\Debug\Maticsoft.Model.pdb
+C:\Users\Azureman\Desktop\NewPort\NewPort\Model\bin\Debug\Maticsoft.Model.dll
+C:\Users\Azureman\Desktop\NewPort\NewPort\Model\bin\Debug\Maticsoft.Model.pdb
+C:\Users\Azureman\Desktop\NewPort\NewPort\Model\obj\Debug\Maticsoft.Model.dll
+C:\Users\Azureman\Desktop\NewPort\NewPort\Model\obj\Debug\Maticsoft.Model.pdb
+C:\Users\Administrator\Desktop\新港项目v1.1\新港项目v1.1\NewPort\NewPort\NewPort\Model\bin\Debug\Maticsoft.Model.dll
+C:\Users\Administrator\Desktop\新港项目v1.1\新港项目v1.1\NewPort\NewPort\NewPort\Model\bin\Debug\Maticsoft.Model.pdb
+C:\Users\Administrator\Desktop\新港项目v1.1\新港项目v1.1\NewPort\NewPort\NewPort\Model\obj\Debug\Maticsoft.Model.dll
+C:\Users\Administrator\Desktop\新港项目v1.1\新港项目v1.1\NewPort\NewPort\NewPort\Model\obj\Debug\Maticsoft.Model.pdb
+C:\Users\Administrator\Desktop\新港项目v1.1\新港项目v1.1\NewPort\NewPort\NewPort\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

@@ -1,0 +1,142 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage_XGB.master.cs" Inherits="Maticsoft.Web.MasterPage_XGB" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+        <title>武汉新港项目管理系统</title><meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="css/fullcalendar.css" />
+<link rel="stylesheet" href="css/matrix-style.css" />
+<link rel="stylesheet" href="css/matrix-media.css" />
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/jquery.gritter.css" />
+<link href='http://fonts.useso.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+</head>
+<style>
+	.trfont{ font-family:"幼圆"; font-size:15px}
+	</style>
+<body>
+
+<!--Header-part-->
+<div id="header">
+  <h1><a href="dashboard.html">雇佣帮</a></h1>
+</div>
+<!--close-Header-part--> 
+
+
+<!--top-Header-menu-->
+<div id="user-nav" class="navbar navbar-inverse">
+  <ul class="nav">
+    <li  class="dropdown" id="profile-messages" ><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="icon icon-user"></i>  <span class="text">您好</span><b class="caret"></b></a>
+    <li class=""><a title="" href="../Login.aspx"><i class="icon icon-share-alt"></i> <span class="text">退出登录</span></a></li>
+  </ul>
+</div>
+<!--close-top-Header-menu-->
+<!--start-top-serch-->
+<!--close-top-serch-->
+<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" ></a></div>
+<!--sidebar-menu-->
+<div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
+  <ul>
+  
+    <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>项目申报</span> <span class="label label-important"></span></a>
+        <ul>
+        <li><a href="addNewPro.aspx">添加新项目</a></li>
+        <li><a href="addPlan.aspx">计划申报</a></li>
+      </ul>
+    </li>
+    <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>项目管理</span> <span class="label label-important"></span></a>
+        <ul>
+        <li><a href="proList.aspx">项目查看</a></li>
+        <li><a href="#">计划查看</a></li>
+      </ul>
+    </li>
+    <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>月度反馈</span> <span class="label label-important"></span></a>
+      <ul>
+        <li><a href="addMonthData.aspx">添加月度反馈</a></li>
+        <li><a href="monthList.aspx">月度反馈查询</a></li>
+      </ul>
+    </li>
+    <li><a href="#"><i class="icon icon-inbox"></i> <span>专项资金支持</span></a></li>
+    <li><a href="noticeList.aspx"><i class="icon icon-inbox"></i> <span>通知公告</span></a></li>
+  </ul>
+</div>
+<!--sidebar-menu-->
+
+<!--main-container-part-->
+<div id="content">
+<!--breadcrumbs-->
+  <div id="content-header">
+    <div id="breadcrumb"> <a href="index.aspx" title="" class="tip-bottom"><i class="icon-home"></i> 回到主页</a></div>
+  </div>
+
+
+
+ <div id="Div1"><form id="Form1" runat="server">
+
+  <asp:ContentPlaceHolder ID="ContentPlaceTop" runat="server">
+</asp:ContentPlaceHolder>
+
+  <div class="default_gwh">  
+  <asp:ContentPlaceHolder ID="MiddleContent" runat="server">
+</asp:ContentPlaceHolder>
+  <div class="default_checkdetails">
+  <asp:ContentPlaceHolder ID="MiddleContent2" runat="server" >
+</asp:ContentPlaceHolder>
+</div>
+
+
+
+
+<script src="js/excanvas.min.js"></script> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.ui.custom.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.flot.min.js"></script> 
+<script src="js/jquery.flot.resize.min.js"></script> 
+<script src="js/jquery.peity.min.js"></script> 
+<script src="js/fullcalendar.min.js"></script> 
+<script src="js/matrix.js"></script> 
+<script src="js/matrix.dashboard.js"></script> 
+<script src="js/jquery.gritter.min.js"></script> 
+<script src="js/matrix.interface.js"></script> 
+<script src="js/matrix.chat.js"></script> 
+<script src="js/jquery.validate.js"></script> 
+<script src="js/matrix.form_validation.js"></script> 
+<script src="js/jquery.wizard.js"></script> 
+<script src="js/jquery.uniform.js"></script> 
+<script src="js/select2.min.js"></script> 
+<script src="js/matrix.popover.js"></script> 
+<script src="js/jquery.dataTables.min.js"></script> 
+<script src="js/matrix.tables.js"></script> 
+
+<script type="text/javascript">
+    // This function is called from the pop-up menus to transfer to
+    // a different page. Ignore if the value returned is a null string:
+    function goPage(newURL) {
+
+        // if url is empty, skip the menu dividers and reset the menu selection to default
+        if (newURL != "") {
+
+            // if url is "-", it is this page -- reset the menu:
+            if (newURL == "-") {
+                resetMenu();
+            }
+            // else, send page to designated URL            
+            else {
+                document.location.href = newURL;
+            }
+        }
+    }
+
+    // resets the menu selection upon entry to this page:
+    function resetMenu() {
+        document.gomenu.selector.selectedIndex = 2;
+    }
+</script>
+
+    </form>
+</body>
+</html>
+
