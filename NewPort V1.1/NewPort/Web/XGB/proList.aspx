@@ -29,13 +29,13 @@
                             <asp:ListItem Value="续建项目"></asp:ListItem>
                         </asp:DropDownList>     
                     </td>&nbsp;&nbsp;
-                    <td>
+                    <!--<td>
                         <asp:DropDownList ID="DropDownList_misCheck" runat="server" 
                 Height="28px" Width="130px" AutoPostBack="True" 
                 onselectedindexchanged="DropDownList_misCheck_SelectedIndexChanged" DataSourceID="SqlDataSource_JHLX" DataTextField="plan_name" DataValueField="plan_id"  >
                         </asp:DropDownList>
                     <asp:SqlDataSource ID="SqlDataSource_JHLX" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [plan_id], [plan_name] FROM [Table_plan]"></asp:SqlDataSource>
-                    </td>&nbsp;&nbsp;
+                    </td>&nbsp;&nbsp;-->
                     <asp:DropDownList ID="DropDownList_Year" runat="server" 
                 Height="28px" Width="130px" AutoPostBack="True" 
                 onselectedindexchanged="DropDownList_Year_SelectedIndexChanged"   >
@@ -70,9 +70,8 @@
                     <td class="tdbg">
                     </td>
                 </tr>
-
                 </div> <div class="gridviewPage">
-                </br><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                </br>
     <asp:GridView ID="GridView_mProject" runat="server" AutoGenerateColumns="False" 
         DataKeyNames="project_id" DataSourceID="SqlDataSource_mProject" Width="1000px" 
         AllowPaging="True" BackColor="#CCCCCC" BorderColor="#999999"
@@ -81,28 +80,25 @@
         CssClass="testGridView" 
             onselectedindexchanged="GridView_mProject_SelectedIndexChanged">
         <Columns>
-            <asp:BoundField DataField="project_id" HeaderText="project_id" ReadOnly="True" SortExpression="project_id" />
-            <asp:BoundField DataField="project_responUnit" HeaderText="project_responUnit" SortExpression="project_responUnit" />
-            <asp:BoundField DataField="project_name" HeaderText="project_name" SortExpression="project_name" />
-            <asp:BoundField DataField="project_owner" HeaderText="project_owner" SortExpression="project_owner" />
-            <asp:BoundField DataField="project_positon" HeaderText="project_positon" SortExpression="project_positon" />
-            <asp:BoundField DataField="project_type" HeaderText="project_type" SortExpression="project_type" />
-            <asp:BoundField DataField="project_constrContent" HeaderText="project_constrContent" SortExpression="project_constrContent" />
-            <asp:BoundField DataField="project_scale" HeaderText="project_scale" SortExpression="project_scale" />
-            <asp:BoundField DataField="project_designCapacity" HeaderText="project_designCapacity" SortExpression="project_designCapacity" />
-            <asp:BoundField DataField="project_designCapacityUnit" HeaderText="project_designCapacityUnit" SortExpression="project_designCapacityUnit" />
-            <asp:BoundField DataField="project_designCapacityRemarks" HeaderText="project_designCapacityRemarks" SortExpression="project_designCapacityRemarks" />
-            <asp:BoundField DataField="project_totalInvestment" HeaderText="project_totalInvestment" SortExpression="project_totalInvestment" />
-            <asp:BoundField DataField="project_constrStartTime" HeaderText="project_constrStartTime" SortExpression="project_constrStartTime" />
-            <asp:BoundField DataField="project_constrEndTime" HeaderText="project_constrEndTime" SortExpression="project_constrEndTime" />
-            <asp:BoundField DataField="project_coveredArea" HeaderText="project_coveredArea" SortExpression="project_coveredArea" />
-            <asp:BoundField DataField="project_state" HeaderText="project_state" SortExpression="project_state" />
-            <asp:BoundField DataField="project_stateChangedTime" HeaderText="project_stateChangedTime" SortExpression="project_stateChangedTime" />
-            <asp:BoundField DataField="project_check" HeaderText="project_check" SortExpression="project_check" />
-            <asp:BoundField DataField="project_writer" HeaderText="project_writer" SortExpression="project_writer" />
-            <asp:BoundField DataField="project_year" HeaderText="project_year" SortExpression="project_year" />
-            <asp:BoundField DataField="project_class" HeaderText="project_class" SortExpression="project_class" />
-            <asp:BoundField DataField="project_area" HeaderText="project_area" SortExpression="project_area" />
+            <asp:BoundField DataField="project_id" HeaderText="项目编号" ReadOnly="True" SortExpression="project_id" />
+            <asp:BoundField DataField="project_name" HeaderText="项目名称" SortExpression="project_name" />
+            <asp:BoundField DataField="project_positon" HeaderText="项目地点" SortExpression="project_positon" />
+            <asp:BoundField DataField="project_type" HeaderText="项目类型" SortExpression="project_type" />
+            <asp:BoundField DataField="project_state" HeaderText="项目状态" SortExpression="project_state" />
+            <asp:HyperLinkField HeaderText="查看详情" ControlStyle-Width="50" 
+                DataNavigateUrlFields="project_id" DataNavigateUrlFormatString="proDetail.aspx?id={0}"
+                                Text="详情" ItemStyle-ForeColor="#0000CC" >
+<ControlStyle Width="50px" ForeColor="Blue"></ControlStyle><ItemStyle ForeColor="#0000CC"></ItemStyle></asp:HyperLinkField>
+
+            <asp:HyperLinkField HeaderText="月度反馈" ControlStyle-Width="50" 
+                DataNavigateUrlFields="project_id" DataNavigateUrlFormatString="monthList.aspx?id={0}"
+                                Text="月度信息" ItemStyle-ForeColor="#0000CC" >
+<ControlStyle Width="50px" ForeColor="Blue"></ControlStyle><ItemStyle ForeColor="#0000CC"></ItemStyle></asp:HyperLinkField>
+
+            <asp:HyperLinkField HeaderText="资金支持" ControlStyle-Width="50" 
+                DataNavigateUrlFields="project_id" DataNavigateUrlFormatString="proDetail.aspx?id={0}"
+                                Text="支持详情" ItemStyle-ForeColor="#0000CC" >
+<ControlStyle Width="50px" ForeColor="Blue"></ControlStyle><ItemStyle ForeColor="#0000CC"></ItemStyle></asp:HyperLinkField>
         </Columns>
         <EmptyDataTemplate>
             未能检索到信息！

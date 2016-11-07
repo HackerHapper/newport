@@ -76,8 +76,8 @@ namespace Maticsoft.Web.XGB
             strWhere.AppendFormat("project_class like '%{0}%'", value);
             strWhere.AppendFormat("and project_state like '%{0}%'", value1);
             strWhere.AppendFormat("and project_type like '%{0}%'", value2);
-            strWhere.AppendFormat("and project_year like '%{0}%'", value3);
-            strWhere.AppendFormat("and project_responUnit like '%{0}%'", strid);
+            //strWhere.AppendFormat("and project_year like '%{0}%'", value3);
+            //strWhere.AppendFormat("and project_responUnit like '%{0}%'", strid);
 
             if (txtmKeyword.Text.Trim() != "")
             {
@@ -86,7 +86,6 @@ namespace Maticsoft.Web.XGB
             ds = bllm.GetList(strWhere.ToString());
             GridView_mProject.DataSource = ds;
             GridView_mProject.DataBind();
-            Label1.Text = strWhere.ToString();
         }
         protected void DropDownList_mType_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -121,8 +120,8 @@ namespace Maticsoft.Web.XGB
             strWhere.AppendFormat("project_class like '%{0}%'", value);
             strWhere.AppendFormat("and project_state like '%{0}%'", value1);
             strWhere.AppendFormat("and project_type like '%{0}%'", value2);
-            strWhere.AppendFormat("and project_year like '%{0}%'", value3);
-            strWhere.AppendFormat("and project_responUnit like '%{0}%'", strid);
+            //strWhere.AppendFormat("and project_year like '%{0}%'", value3);
+            //strWhere.AppendFormat("and project_responUnit like '%{0}%'", strid);
             if (txtmKeyword.Text.Trim() != "")
             {
                 strWhere.AppendFormat("and(project_name like '%{0}%' or project_owner like '%{0}%' or project_positon like '%{0}%')", txtmKeyword.Text.Trim());
