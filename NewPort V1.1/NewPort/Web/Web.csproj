@@ -92,9 +92,9 @@
     <Content Include="css\matrix-style.css" />
     <Content Include="css\select2.css" />
     <Content Include="css\uniform.css" />
+    <Content Include="Global.asax" />
     <Content Include="GWH\Default_GWH.aspx" />
     <Content Include="font-awesome\css\font-awesome.css" />
-    <Content Include="Global.asax" />
     <Content Include="GWH\InvestAddMiles.aspx" />
     <Content Include="GWH\InvestPlan.aspx" />
     <Content Include="GWH\InvestPlanTable.aspx" />
@@ -134,8 +134,6 @@
     <Content Include="GWH\js\matrix.wizard.js" />
     <Content Include="GWH\js\select2.min.js" />
     <Content Include="GWH\js\wysihtml5-0.3.0.js" />
-    <Content Include="GWH\MonthlyFeedback.aspx" />
-    <Content Include="GWH\MonthlyFeedback_Details.aspx" />
     <Content Include="GWH\My97DatePicker\calendar.js" />
     <Content Include="GWH\My97DatePicker\lang\en.js" />
     <Content Include="GWH\My97DatePicker\lang\zh-cn.js" />
@@ -336,15 +334,15 @@
     <Compile Include="Controls\CopyRight.ascx.designer.cs">
       <DependentUpon>copyright.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="GWH\Default_GWH.aspx.cs">
       <DependentUpon>Default_GWH.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="GWH\Default_GWH.aspx.designer.cs">
       <DependentUpon>Default_GWH.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="GWH\InvestAddMiles.aspx.cs">
       <DependentUpon>InvestAddMiles.aspx</DependentUpon>
@@ -366,20 +364,6 @@
     </Compile>
     <Compile Include="GWH\InvestPlanTable.aspx.designer.cs">
       <DependentUpon>InvestPlanTable.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GWH\MonthlyFeedback.aspx.cs">
-      <DependentUpon>MonthlyFeedback.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GWH\MonthlyFeedback.aspx.designer.cs">
-      <DependentUpon>MonthlyFeedback.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GWH\MonthlyFeedback_Details.aspx.cs">
-      <DependentUpon>MonthlyFeedback_Details.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GWH\MonthlyFeedback_Details.aspx.designer.cs">
-      <DependentUpon>MonthlyFeedback_Details.aspx</DependentUpon>
     </Compile>
     <Compile Include="GWH\Notice.aspx.cs">
       <DependentUpon>Notice.aspx</DependentUpon>
@@ -583,7 +567,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Global.asax.resx">
       <DependentUpon>Global.asax.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="obj\Debug\Maticsoft.Web.Global.resources" />
   </ItemGroup>

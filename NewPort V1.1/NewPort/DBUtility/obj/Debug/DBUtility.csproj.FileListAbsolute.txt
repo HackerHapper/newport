@@ -33,3 +33,12 @@ C:\Users\Administrator\Desktop\新港项目v1.1\新港项目v1.1\NewPort\NewPort
 C:\Users\Administrator\Desktop\新港项目v1.1\新港项目v1.1\NewPort\NewPort\NewPort\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\新港项目v1.1\新港项目v1.1\NewPort\NewPort\NewPort\DBUtility\obj\Debug\Maticsoft.DBUtility.dll
 C:\Users\Administrator\Desktop\新港项目v1.1\新港项目v1.1\NewPort\NewPort\NewPort\DBUtility\obj\Debug\Maticsoft.DBUtility.pdb
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DBUtility\bin\Debug\Maticsoft.DBUtility.dll
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DBUtility\bin\Debug\Maticsoft.DBUtility.pdb
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DBUtility\bin\Debug\IBatisNet.Common.dll
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DBUtility\bin\Debug\IBatisNet.DataMapper.dll
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DBUtility\bin\Debug\MySql.Data.dll
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DBUtility\bin\Debug\System.Data.SQLite.DLL
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DBUtility\obj\Debug\Maticsoft.DBUtility.dll
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DBUtility\obj\Debug\Maticsoft.DBUtility.pdb

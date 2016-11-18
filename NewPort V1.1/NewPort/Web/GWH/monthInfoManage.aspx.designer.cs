@@ -8,54 +8,64 @@
 //------------------------------------------------------------------------------
 
 namespace Maticsoft.Web.GWH {
-    
-    
-    public partial class MonthlyFeedback {
+
+
+    public partial class monthInfoManage
+    {
         
         /// <summary>
-        /// txtKeyword 控件。
+        /// ddlist_pro 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtKeyword;
+        protected global::System.Web.UI.WebControls.DropDownList ddlist_pro;
         
         /// <summary>
-        /// DropDownList_mType 控件。
+        /// tbox_pro 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList_mType;
+        protected global::System.Web.UI.WebControls.TextBox tbox_pro;
         
         /// <summary>
-        /// SqlDataSource1 控件。
+        /// btnSearchByPro 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.Button btnSearchByPro;
         
         /// <summary>
-        /// btnmSearch 控件。
+        /// tbox_month 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnmSearch;
+        protected global::System.Web.UI.WebControls.TextBox tbox_month;
         
         /// <summary>
-        /// GridView_Project 控件。
+        /// btnSearchByMonth 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView_Project;
+        protected global::System.Web.UI.WebControls.Button btnSearchByMonth;
+        
+        /// <summary>
+        /// GVbyPro 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GVbyPro;
         
         /// <summary>
         /// SqlDataSource_Project 控件。
@@ -65,5 +75,14 @@ namespace Maticsoft.Web.GWH {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource_Project;
+        
+        /// <summary>
+        /// GVbyMonth 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GVbyMonth;
     }
 }

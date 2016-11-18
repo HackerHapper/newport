@@ -9,22 +9,16 @@ using System.Text;
 
 namespace Maticsoft.Web.GWH
 {
-    public partial class MonthlyFeedback : System.Web.UI.Page
+    public partial class monthInfoManage : System.Web.UI.Page
     {
-        static string strid = ""; 
         Maticsoft.BLL.NewPort.Table_project bll = new Maticsoft.BLL.NewPort.Table_project();
         Maticsoft.BLL.NewPort.Table_monthlyFeedback bllmf = new Maticsoft.BLL.NewPort.Table_monthlyFeedback();
+       
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["isLogin"] != "ok")
             {
                 Response.Redirect("../Login.aspx");
-            }
-            if (Request.QueryString["id"] != null)
-            {
-                strid = Request.QueryString["id"].ToString();
-                Maticsoft.BLL.NewPort.Table_monthlyFeedback bll = new Maticsoft.BLL.NewPort.Table_monthlyFeedback();
-                bll.Delete(strid);
             }
         }
         protected void gvwDesignationName_PageIndexChanging(object sender, GridViewPageEventArgs e)
@@ -69,29 +63,35 @@ namespace Maticsoft.Web.GWH
             GridView_Project.DataSource = ds;
             GridView_Project.DataBind();
         }
-        protected void btnSearch_Click(object sender, EventArgs e)
+        public void DropDownListBindData(string gvName,string queryStr)
         {
-            mDropDownListBindData();
-        }
-
-        protected void DropDownList_mType_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            mDropDownListBindData();
-        }
-        public void mDropDownListBindData()
-        {
-            string value = DropDownList_mType.SelectedValue.ToString().Trim();
-            this.GridView_Project.DataSourceID = null;
+            if (gvName == "GVbyPro")
+            {
+                this.GVbyPro.DataSourceID = null;
+            }
+            else 
+            {
+                this.GVbyMonth.DataSourceID = null;
+            }
             DataSet ds = new DataSet();
             StringBuilder strWhere = new StringBuilder();
-            strWhere.AppendFormat("project_id like '%{0}%'", value);
-            if (txtKeyword.Text.Trim() != "")
+            if (queryStr != "")
             {
-                strWhere.AppendFormat("and(monthlyFeedback_fulfilmentDescription like '%{0}%' or monthlyFeedback_writer like '%{0}%' or project_id like '%{0}%')", txtKeyword.Text.Trim());
+                strWhere.AppendFormat("monthlyFeedback_fulfilmentDescription like '%{0}%'", queryStr);
             }
             ds = bllmf.GetList(strWhere.ToString());
             GridView_Project.DataSource = ds;
             GridView_Project.DataBind();
+        }
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {          
+            //根据页面情况传入dropdownlist的选项或者是TEXTBOX里的项目ID，到gvByPro这个GIRDVIEW里面，然后重新绑定即可。
+            DropDownListBindData("GVbyPro", tbox_pro.Text);
+        }
+        protected void ddlist_pro_selectChange(object sender, EventArgs e)
+        { 
+          tbox_pro.Text=ddlist_pro.SelectedValue;
+          Response.Write("<alert>" + tbox_pro.Text + "</alert>");
         }
     }
 }

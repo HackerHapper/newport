@@ -70,3 +70,21 @@ C:\Users\Administrator\Desktop\新港项目v1.1\新港项目v1.1\NewPort\NewPort
 C:\Users\Administrator\Desktop\新港项目v1.1\新港项目v1.1\NewPort\NewPort\NewPort\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\新港项目v1.1\新港项目v1.1\NewPort\NewPort\NewPort\DAL\obj\Debug\Maticsoft.DAL.dll
 C:\Users\Administrator\Desktop\新港项目v1.1\新港项目v1.1\NewPort\NewPort\NewPort\DAL\obj\Debug\Maticsoft.DAL.pdb
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DAL\bin\Debug\Maticsoft.DAL.dll
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DAL\bin\Debug\Maticsoft.DAL.pdb
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DAL\bin\Debug\Maticsoft.Common.dll
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DAL\bin\Debug\Maticsoft.DBUtility.dll
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DAL\bin\Debug\Maticsoft.Model.dll
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DAL\bin\Debug\MySql.Data.dll
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DAL\bin\Debug\OpenSmtp.dll
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DAL\bin\Debug\Excel.dll
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DAL\bin\Debug\COM.Excel.dll
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DAL\bin\Debug\IBatisNet.DataMapper.dll
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DAL\bin\Debug\IBatisNet.Common.dll
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DAL\bin\Debug\System.Data.SQLite.dll
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DAL\bin\Debug\Maticsoft.Common.pdb
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DAL\bin\Debug\Maticsoft.DBUtility.pdb
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DAL\bin\Debug\Maticsoft.Model.pdb
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DAL\obj\Debug\Maticsoft.DAL.dll
+E:\GIT项目库\newport\NewPort V1.1\NewPort\DAL\obj\Debug\Maticsoft.DAL.pdb

@@ -188,3 +188,6 @@ C:\Users\Azureman\Source\Repos\newport\NewPort V1.1\NewPort\Web\obj\Debug\Matics
 C:\Users\Azureman\Source\Repos\newport\NewPort V1.1\NewPort\Web\obj\Debug\Web.csproj.GenerateResource.Cache
 C:\Users\Azureman\Source\Repos\newport\NewPort V1.1\NewPort\Web\obj\Debug\Maticsoft.Web.dll
 C:\Users\Azureman\Source\Repos\newport\NewPort V1.1\NewPort\Web\obj\Debug\Maticsoft.Web.pdb
+E:\GIT项目库\newport\NewPort V1.1\NewPort\Web\obj\Debug\Web.csprojResolveAssemblyReference.cache
+E:\GIT项目库\newport\NewPort V1.1\NewPort\Web\obj\Debug\Maticsoft.Web.Global.resources
+E:\GIT项目库\newport\NewPort V1.1\NewPort\Web\obj\Debug\Web.csproj.GenerateResource.Cache

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage_GWH.master" AutoEventWireup="true" CodeBehind="Plan_Check.aspx.cs" Inherits="Maticsoft.Web.GWH.Plan_Check" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage_GWH.master" AutoEventWireup="true" CodeBehind="plan_Check.aspx.cs" Inherits="Maticsoft.Web.GWH.Plan_Check" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MiddleContent" runat="server">
@@ -12,7 +12,7 @@
                        Width="130px" 
                        onselectedindexchanged="DropDownList_Type_SelectedIndexChanged" 
                        AutoPostBack="True">
-                            <asp:ListItem Value=" ">选择项目类型</asp:ListItem>
+                            <asp:ListItem Value=" ">选择计划类型</asp:ListItem>
                             <asp:ListItem Value="港航项目"></asp:ListItem>
                             <asp:ListItem Value="集疏运项目"></asp:ListItem>
                             <asp:ListItem Value="物流园区项目"></asp:ListItem>
@@ -24,7 +24,7 @@
                        Width="130px" 
                        onselectedindexchanged="DropDownList_State_SelectedIndexChanged" 
                        AutoPostBack="True">
-                            <asp:ListItem Value=" ">选择项目状态</asp:ListItem>
+                            <asp:ListItem Value=" ">选择计划年度</asp:ListItem>
                             <asp:ListItem Value="策划"></asp:ListItem>
                             <asp:ListItem Value="新开工"></asp:ListItem>
                             <asp:ListItem Value="续建项目"></asp:ListItem>
@@ -35,7 +35,7 @@
                        Width="130px" 
                        onselectedindexchanged="DropDownList_isCheck_SelectedIndexChanged" 
                        AutoPostBack="True" >
-                            <asp:ListItem Value=" ">选择审核信息</asp:ListItem>
+                            <asp:ListItem Value=" ">选择申报单位</asp:ListItem>
                             <asp:ListItem Value="审核通过">审核通过</asp:ListItem>
                             <asp:ListItem Value="审核未通过">审核未通过</asp:ListItem>
                             <asp:ListItem Value="待审核">待审核</asp:ListItem>
@@ -43,27 +43,7 @@
                     </td>
                 </tr>
             </div>
-            <div class="searchtext">
-                <tr>
-                    <td style="width: 80px" align="right" class="tdbg">
-                         <b>关键字：</b>
-                    </td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <td class="tdbg">                       
-                    <asp:TextBox ID="txtKeyword" runat="server" Height="20px" Width="258px"></asp:TextBox>
-                    &nbsp;&nbsp;&nbsp;
-                    <asp:Button class="btn btn-success" ID="btnmSearch" runat="server" Text="查询"   Width="85px" 
-                    Height="30px" OnClick="btnSearch_Click" >
-                    </asp:Button> 
-                    &nbsp;&nbsp;&nbsp;                    
-                    </td>
-                    <td class="tdbg">
-                    </td>
-                </tr>
-                </div>
-            <!--Search end-->
-            <br />
-            <br />
-            
+           
  <div class="gridviewPage">
     <asp:GridView ID="GridView_Project" runat="server" AutoGenerateColumns="False" 
         DataKeyNames="project_id" DataSourceID="SqlDataSource_Project" Width="1000px" 
@@ -72,18 +52,19 @@
         ForeColor="Black" OnPageIndexChanging="gvwDesignationName_PageIndexChanging" 
         CssClass="testGridView">
         <Columns>
-            <asp:BoundField DataField="project_name" HeaderText="项目名称" 
+            <asp:BoundField DataField="project_name" HeaderText="计划ID" 
                 SortExpression="project_name" />
-            <asp:BoundField DataField="project_owner" HeaderText="业主单位" 
-                SortExpression="project_owner" />
-            <asp:BoundField DataField="project_positon" HeaderText="项目地点" 
+            <asp:BoundField DataField="project_positon" HeaderText="计划类型" 
                 SortExpression="project_positon" />
-            <asp:BoundField DataField="project_type" HeaderText="项目类型" 
+            <asp:BoundField DataField="project_type" HeaderText="计划年度" 
                 SortExpression="project_type" />
-            <asp:BoundField DataField="project_state" HeaderText="项目属性" 
+            <asp:BoundField DataField="project_owner" HeaderText="申报单位" 
+                SortExpression="project_owner" />
+            <asp:BoundField DataField="project_state" HeaderText="项目数量" 
                 SortExpression="project_state" />
-            <asp:BoundField DataField="project_check" HeaderText="审核状态" 
+            <asp:BoundField DataField="project_check" HeaderText="新开工项目数量" 
                 SortExpression="project_check" />
+            <asp:ButtonField HeaderText="查看项目列表" Text="按钮" />
             <asp:HyperLinkField HeaderText="进行审核" ControlStyle-Width="50" 
                 DataNavigateUrlFields="project_id" DataNavigateUrlFormatString="Plan_Check_Details.aspx?id={0}" Text="审核" ItemStyle-ForeColor="#0000CC" >
 <ControlStyle Width="50px" ForeColor="Blue"></ControlStyle><ItemStyle ForeColor="#0000CC"></ItemStyle>
@@ -130,7 +111,19 @@ CommandName="Page" Text="确定" /> &nbsp;&nbsp
         ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
         SelectCommand="SELECT * FROM [Table_project]"></asp:SqlDataSource>
 </div>
-</asp:Content>
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False">
+        <Columns>
+            <asp:BoundField HeaderText="项目ID" />
+            <asp:BoundField HeaderText="项目名称" />
+            <asp:BoundField HeaderText="业主单位" />
+            <asp:BoundField HeaderText="起始时间" />
+            <asp:BoundField HeaderText="预计完成时间" />
+            <asp:BoundField HeaderText="总投资" />
+            <asp:BoundField HeaderText="是否立项审核" />
+            <asp:ButtonField HeaderText="查看项目详情" Text="按钮" />
+        </Columns>
+    </asp:GridView>
+    </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceLeft" runat="server">
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
@@ -167,6 +160,6 @@ CommandName="Page" Text="确定" /> &nbsp;&nbsp
 
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceTop" runat="server">
   <div id="content-header">
-    <div id="breadcrumb"> <a href="Default_GWH.aspx" title="回到主页" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="Plan_Check.aspx" class="current">项目审核</a></div>
+    <div id="breadcrumb"> <a href="Default_GWH.aspx" title="回到主页" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="Plan_Check.aspx" class="current">计划项目管理</a></div>
   </div>
 </asp:Content>

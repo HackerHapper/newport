@@ -5,8 +5,15 @@
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
   <ul>
     <li class="active"><a href="Default_GWH.aspx" onclick="javascript:addClass(this.parentNode,'active')"><i class="icon icon-inbox"></i> <span>系统首页</span></a></li>
-    <li><a href="Plan_Check.aspx" onclick="javascript:addClass(this.parentNode,'active')"><i class="icon icon-inbox"></i> <span>项目审核</span></a></li>
-    <li class="submenu"> <a href=""><i class="icon icon-th-list"></i> <span>项目管理</span> <span class="label label-important"></span></a>
+     
+      <li class="submenu"> <a href=""><i class="icon icon-th-list"></i> <span>计划项目审核</span> <span class="label label-important"></span></a>
+      <ul>
+        <li><a href="pro_Check.aspx" onclick="javascript:addClass(this.parentNode,'active')"><i class="icon icon-inbox"></i> <span>新入库项目审核</span></a></li>
+        <li><a href="plan_Check.aspx" onclick="javascript:addClass(this.parentNode,'active')"><i class="icon icon-inbox"></i> <span>计划审核</span></a></li>
+        <li><a href="plan_List.aspx" onclick="javascript:addClass(this.parentNode,'active')"><i class="icon icon-inbox"></i> <span>计划查看</span></a></li>
+      </ul>
+  
+       <li class="submenu"> <a href=""><i class="icon icon-th-list"></i> <span>项目管理</span> <span class="label label-important"></span></a>
       <ul>
         <li><a href="Plan_Management.aspx">项目查询及编辑</a></li>
         <li><a href="Plan_Specialty.aspx">专项资金支持</a></li>

@@ -10,51 +10,69 @@
 namespace Maticsoft.Web.GWH {
     
     
-    public partial class MonthlyFeedback_Details {
+    public partial class Plan_Check {
         
         /// <summary>
-        /// lbl_number 控件。
+        /// DropDownList_Type 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_number;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList_Type;
         
         /// <summary>
-        /// lbl_time 控件。
+        /// DropDownList_State 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_time;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList_State;
         
         /// <summary>
-        /// lbl_completed 控件。
+        /// DropDownList_isCheck 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_completed;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList_isCheck;
         
         /// <summary>
-        /// lbl_process 控件。
+        /// txtKeyword 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_process;
+        protected global::System.Web.UI.WebControls.TextBox txtKeyword;
         
         /// <summary>
-        /// btnSubmit 控件。
+        /// btnmSearch 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSubmit;
+        protected global::System.Web.UI.WebControls.Button btnmSearch;
+        
+        /// <summary>
+        /// GridView_Project 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GridView_Project;
+        
+        /// <summary>
+        /// SqlDataSource_Project 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource_Project;
     }
 }

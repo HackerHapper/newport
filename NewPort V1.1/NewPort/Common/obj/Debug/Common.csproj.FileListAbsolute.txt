@@ -33,3 +33,12 @@ C:\Users\Administrator\Desktop\新港项目v1.1\新港项目v1.1\NewPort\NewPort
 C:\Users\Administrator\Desktop\新港项目v1.1\新港项目v1.1\NewPort\NewPort\NewPort\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\新港项目v1.1\新港项目v1.1\NewPort\NewPort\NewPort\Common\obj\Debug\Maticsoft.Common.dll
 C:\Users\Administrator\Desktop\新港项目v1.1\新港项目v1.1\NewPort\NewPort\NewPort\Common\obj\Debug\Maticsoft.Common.pdb
+E:\GIT项目库\newport\NewPort V1.1\NewPort\Common\bin\Debug\Maticsoft.Common.dll
+E:\GIT项目库\newport\NewPort V1.1\NewPort\Common\bin\Debug\Maticsoft.Common.pdb
+E:\GIT项目库\newport\NewPort V1.1\NewPort\Common\bin\Debug\COM.Excel.dll
+E:\GIT项目库\newport\NewPort V1.1\NewPort\Common\bin\Debug\Excel.dll
+E:\GIT项目库\newport\NewPort V1.1\NewPort\Common\bin\Debug\OpenSmtp.dll
+E:\GIT项目库\newport\NewPort V1.1\NewPort\Common\bin\Debug\OWC10Chart.dll
+E:\GIT项目库\newport\NewPort V1.1\NewPort\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+E:\GIT项目库\newport\NewPort V1.1\NewPort\Common\obj\Debug\Maticsoft.Common.dll
+E:\GIT项目库\newport\NewPort V1.1\NewPort\Common\obj\Debug\Maticsoft.Common.pdb

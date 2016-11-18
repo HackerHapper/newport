@@ -56,7 +56,8 @@
 <!--close-top-Header-menu-->
 <!--start-top-serch-->
   <asp:ContentPlaceHolder ID="ContentPlaceLeft" runat="server">
-</asp:ContentPlaceHolder>
+
+  </asp:ContentPlaceHolder>
 <!--sidebar-menu-->
 
 <!--main-container-part-->
