@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Maticsoft.Web.Global" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Maticsoft.Web.Global" Language="C#" %>

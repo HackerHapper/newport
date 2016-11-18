@@ -38,8 +38,9 @@
                     &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
                     <asp:DropDownList ID="btnType" runat="server" 
                         Height="30px" Width="118px" BackColor="#009933" ForeColor="White" >
-                        <asp:ListItem Value="新港办">新港办用户</asp:ListItem>
                         <asp:ListItem Value="管委会">管委会用户</asp:ListItem>
+                        <asp:ListItem Value="新港办">新港办用户</asp:ListItem>
+                        
                     </asp:DropDownList></span>
                 </div>
             </form>

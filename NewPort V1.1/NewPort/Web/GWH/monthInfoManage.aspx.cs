@@ -54,44 +54,53 @@ namespace Maticsoft.Web.GWH
             //得到新的值 
             theGrid.PageIndex = newPageIndex;
             //重新绑定 
-            BindData();
+            BindData(theGrid);
         }
-        public void BindData()
+        public void BindData(GridView gv)
         {
-            this.GridView_Project.DataSourceID = null;
+            gv.DataSourceID = null;
             DataSet ds = new DataSet();
-            GridView_Project.DataSource = ds;
-            GridView_Project.DataBind();
+            gv.DataSource = ds;
+            gv.DataBind();
         }
-        public void DropDownListBindData(string gvName,string queryStr)
+        public void DropDownListBindData(GridView gvName,string queryStr)
         {
-            if (gvName == "GVbyPro")
-            {
-                this.GVbyPro.DataSourceID = null;
-            }
-            else 
-            {
-                this.GVbyMonth.DataSourceID = null;
-            }
+          
+           
+                gvName.DataSourceID = null;
+           
             DataSet ds = new DataSet();
             StringBuilder strWhere = new StringBuilder();
-            if (queryStr != "")
+            if ((queryStr != "")&&(gvName.ID.ToString()=="GVbyPro"))
             {
-                strWhere.AppendFormat("monthlyFeedback_fulfilmentDescription like '%{0}%'", queryStr);
+                strWhere.AppendFormat("[project_id] like '%{0}%' order by [monthlyFeedback_yyyyMM]", queryStr);
+            }
+            else if ((queryStr != "") &&(gvName.ID.ToString () == "GVbyMonth"))
+            {
+                strWhere.AppendFormat("[monthlyFeedback_yyyyMM] like '%{0}%' order by [project_id]", queryStr);
             }
             ds = bllmf.GetList(strWhere.ToString());
-            GridView_Project.DataSource = ds;
-            GridView_Project.DataBind();
+            gvName.DataSource = ds;
+            gvName.DataBind();
         }
         protected void btnSearch_Click(object sender, EventArgs e)
-        {          
+        {
+            GVbyPro.Visible = true; GVbyMonth.Visible = false; 
             //根据页面情况传入dropdownlist的选项或者是TEXTBOX里的项目ID，到gvByPro这个GIRDVIEW里面，然后重新绑定即可。
-            DropDownListBindData("GVbyPro", tbox_pro.Text);
+            DropDownListBindData(GVbyPro, tbox_pro.Text);
         }
         protected void ddlist_pro_selectChange(object sender, EventArgs e)
-        { 
+        {
+            GVbyPro.Visible = true; GVbyMonth.Visible = false;
           tbox_pro.Text=ddlist_pro.SelectedValue;
-          Response.Write("<alert>" + tbox_pro.Text + "</alert>");
+          DropDownListBindData(GVbyPro, tbox_pro.Text);
+        }
+
+        protected void btnSearch_ClickbyMonth(object sender, EventArgs e)
+        {
+            GVbyPro.Visible = false; GVbyMonth.Visible = true;
+            //根据页面情况传入dropdownlist的选项或者是TEXTBOX里的项目ID，到gvByPro这个GIRDVIEW里面，然后重新绑定即可。
+            DropDownListBindData(GVbyMonth, tbox_month.Text);
         }
     }
 }

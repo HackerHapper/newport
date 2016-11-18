@@ -11,7 +11,7 @@ namespace Maticsoft.Web.GWH
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["isLogin"] != "ok")
+            if (Session["isLogin"].ToString() != "ok")
             {
                 Response.Redirect("../Login.aspx");
             }

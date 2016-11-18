@@ -73,9 +73,9 @@ namespace Maticsoft.Web.GWH
             strWhere.AppendFormat("and project_state like '%{0}%'", value1);
             strWhere.AppendFormat("and project_type like '%{0}%'", value2);
 
-            if (txtKeyword.Text.Trim() != "")
+           // if (txtKeyword.Text.Trim() != "")
             {
-                strWhere.AppendFormat("and(project_name like '%{0}%' or project_owner like '%{0}%' or project_positon like '%{0}%')", txtKeyword.Text.Trim());
+             //   strWhere.AppendFormat("and(project_name like '%{0}%' or project_owner like '%{0}%' or project_positon like '%{0}%')", txtKeyword.Text.Trim());
             }
             ds = bll.GetList(strWhere.ToString());
             GridView_Project.DataSource = ds;
@@ -108,9 +108,9 @@ namespace Maticsoft.Web.GWH
             strWhere.AppendFormat("project_check like '%{0}%'", value);
             strWhere.AppendFormat("and project_state like '%{0}%'", value1);
             strWhere.AppendFormat("and project_type like '%{0}%'", value2);
-            if (txtKeyword.Text.Trim() != "")
+           // if (txtKeyword.Text.Trim() != "")
             {
-                strWhere.AppendFormat("and(project_name like '%{0}%' or project_owner like '%{0}%' or project_positon like '%{0}%')", txtKeyword.Text.Trim());
+            //    strWhere.AppendFormat("and(project_name like '%{0}%' or project_owner like '%{0}%' or project_positon like '%{0}%')", txtKeyword.Text.Trim());
             }
             ds = bll.GetList(strWhere.ToString());
             GridView_Project.DataSource = ds;

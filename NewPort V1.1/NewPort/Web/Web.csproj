@@ -134,6 +134,7 @@
     <Content Include="GWH\js\matrix.wizard.js" />
     <Content Include="GWH\js\select2.min.js" />
     <Content Include="GWH\js\wysihtml5-0.3.0.js" />
+    <Content Include="GWH\monthInfoManage.aspx" />
     <Content Include="GWH\My97DatePicker\calendar.js" />
     <Content Include="GWH\My97DatePicker\lang\en.js" />
     <Content Include="GWH\My97DatePicker\lang\zh-cn.js" />
@@ -241,6 +242,8 @@
     <Content Include="obj\Debug\Maticsoft.Web.dll" />
     <Content Include="obj\Debug\Maticsoft.Web.pdb" />
     <Content Include="obj\Debug\Web.csproj.FileListAbsolute.txt" />
+    <Content Include="upload\1607230000.jpg" />
+    <Content Include="upload\1607230001.jpg" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -316,6 +319,7 @@
     <Content Include="XGB\noticeList.aspx" />
     <Content Include="XGB\noticeDetails.aspx" />
     <Content Include="XGB\planHistoryList.aspx" />
+    <Content Include="XGB\planNotice.aspx" />
     <Content Include="XGB\proList.aspx" />
     <Content Include="XGB\proDetail.aspx" />
   </ItemGroup>
@@ -364,6 +368,13 @@
     </Compile>
     <Compile Include="GWH\InvestPlanTable.aspx.designer.cs">
       <DependentUpon>InvestPlanTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GWH\monthInfoManage.aspx.cs">
+      <DependentUpon>monthInfoManage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GWH\monthInfoManage.aspx.designer.cs">
+      <DependentUpon>monthInfoManage.aspx</DependentUpon>
     </Compile>
     <Compile Include="GWH\Notice.aspx.cs">
       <DependentUpon>Notice.aspx</DependentUpon>
@@ -549,6 +560,13 @@
     <Compile Include="XGB\planHistoryList.aspx.designer.cs">
       <DependentUpon>planHistoryList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="XGB\planNotice.aspx.cs">
+      <DependentUpon>planNotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XGB\planNotice.aspx.designer.cs">
+      <DependentUpon>planNotice.aspx</DependentUpon>
+    </Compile>
     <Compile Include="XGB\proList.aspx.cs">
       <DependentUpon>proList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -565,9 +583,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Global.asax.resx">
-      <DependentUpon>Global.asax.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="obj\Debug\Maticsoft.Web.Global.resources" />
   </ItemGroup>
   <ItemGroup>
@@ -612,6 +627,11 @@
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="obj\Debug\Web.csproj.GenerateResource.Cache" />
     <None Include="obj\Debug\Web.csprojResolveAssemblyReference.cache" />
+    <Content Include="upload\1607230002.dat" />
+    <Content Include="upload\1607230003.dat" />
+    <Content Include="upload\1607230004.dat" />
+    <Content Include="upload\1607230005.dat" />
+    <Content Include="upload\评论.xlsx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="obj\Debug\TempPE\" />

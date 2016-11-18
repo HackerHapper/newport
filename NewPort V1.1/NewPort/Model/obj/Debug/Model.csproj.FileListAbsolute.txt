@@ -19,3 +19,4 @@ E:\GIT项目库\newport\NewPort V1.1\NewPort\Model\bin\Debug\Maticsoft.Model.dll
 E:\GIT项目库\newport\NewPort V1.1\NewPort\Model\bin\Debug\Maticsoft.Model.pdb
 E:\GIT项目库\newport\NewPort V1.1\NewPort\Model\obj\Debug\Maticsoft.Model.dll
 E:\GIT项目库\newport\NewPort V1.1\NewPort\Model\obj\Debug\Maticsoft.Model.pdb
+E:\GIT项目库\newport\NewPort V1.1\NewPort\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
